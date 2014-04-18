@@ -1,0 +1,18 @@
+# newlifebayarea
+
+The New Life Bay Area web site.
+
+## Getting Started
+To run this project, first install node.js (http://nodejs.org/).
+Then install Grunt (http://gruntjs.com/getting-started).
+
+### Overview
+Grunt automates the entire process of creating the New Life Bay Area web site through
+'tasks,' which are defined in Gruntfile.js. The default set of tasks will generate a
+new set of web pages and all the resources it needs.
+
+This project uses the Assemble templating library to ease maintenance and any future
+development, particularly of the header, footer, or navigation of the web site.
+
+### Example Commands
+grunt

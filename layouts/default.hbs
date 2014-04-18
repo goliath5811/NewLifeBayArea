@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <title>New Life Christian Fellowship</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <META name="keywords" content="">
+    <META name="description" content="">
+    <META name="abstract" content="">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css" media="screen">
+    <!--<link rel="stylesheet" href="../font-awesome-4.0.3/css/font-awesome.css">-->
+</head>
+<body>
+<div id="main">
+    <div class="wrap">
+        <div id="header">
+            {{md './src/pages/navigation.md'}}
+            <div class="line"></div>
+        </div>
+        <div class="container">
+            {{> body }}
+        </div>
+    </div>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="center">
+                <div class="row">
+                    <div class="span4 offset1">
+                        <address class="text-center">
+                            <span class="spacer"><i class="fa fa-location-arrow fa-fw"></i>22360 Redwood Road Castro Valley, CA 94546</span>
+                        </address>
+                    </div>
+                    <div class="span3">
+                        <address class="text-center">
+                            <span class="spacer nowrap"><i class="fa fa-phone fa-fw"></i>(510) 582-2261</span>
+                        </address>
+                    </div>
+                    <div class="span3">
+                        <address class="text-center">
+                            <span class="spacer"><i class="fa fa-envelope fa-fw"></i><a
+                                    href="mailto:admin@newlifebayarea.org">admin@newlifebayarea.org</a></span>
+                        </address>
+                    </div>
+                    <div class="span1 text-center">
+                            <span class="nowrap">
+                                <i class="fa fa-twitter fa-fw"></i>
+                                <i class="fa fa-google-plus fa-fw"></i>
+                                <i class="fa fa-facebook fa-fw"></i>
+                            </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!-- Think about linking external Javascript and CSS? -->
+<script src="js/jquery-1.11.0.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+</body>
+</html>
