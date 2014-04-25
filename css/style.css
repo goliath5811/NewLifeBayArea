@@ -1,0 +1,104 @@
+#logo img {
+    height: 40px;
+    width: auto;
+}
+
+a#logo {
+    padding: 0px 10px 0px 10px;
+}
+
+.floatright {
+    float:right;
+}
+
+.floatleft {
+    float: left;
+    padding-right: 10px;
+}
+
+/*footer {*/
+    /*background-color: #FAFAFA;*/
+    /*height: 180px;*/
+/*}*/
+
+html, body {
+    height: 100%;
+}
+
+div#wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -180px;
+    padding: 0 0 180px;
+}
+
+div#header {
+    background-color: #FAFAFA;
+}
+
+.line {
+    background-color: #F9C116;
+    min-height: 4px;
+}
+
+.spacer {
+    margin: 0px 25px 0px 25px;
+}
+
+h2 {
+    color: #98abce;
+}
+
+.italic {
+    font-style: italic;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.center {
+    margin: auto;
+}
+
+.nowrap {
+    white-space: nowrap;
+}
+
+.nobullet {
+    list-style-type: none;
+    margin-left: 0px;
+    padding-left: 0px;
+}
+
+.nobullet li {
+    padding-bottom: 20px;
+}
+
+.hangingindent {
+    padding-left: 5em;
+}
+
+.section:after {
+    content: ".";
+    display: block;
+    height: 0px;
+    visibility: hidden;
+    clear: both;
+}
+
+a .fa {
+    margin-right: 3px;
+}
+
+span.media-date {
+    height: 64px;
+    width: 64px;
+    text-align: center;
+    background-color: #98ABCE;
+}
+
+span.media-date em {
+    display: block;
+    margin: 10px 0px 4px 0px;
+}
