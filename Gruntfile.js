@@ -39,7 +39,7 @@ module.exports = function (grunt) {
                 expand: true,
                 src: ['*.html'],
                 ext: '.html',
-                dest: 'site/'
+                dest: 'build/'
             }
         },
 
@@ -48,12 +48,14 @@ module.exports = function (grunt) {
          */
         uglify: {
             my_target: {
-                files: [{
-                    expand: true,
-                    cwd: 'js',
-                    src: '**/*.js',
-                    dest: 'site/js'
-                }]
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'js',
+                        src: '**/*.js',
+                        dest: 'site/js'
+                    }
+                ]
             }
         },
 
@@ -70,12 +72,31 @@ module.exports = function (grunt) {
         },
 
         /**
+         * Minify HTML to reduce file size
+         */
+        htmlmin: {
+            main: {
+                options: {
+                    removeComments: true
+                },
+                files: [
+                    {
+                        expand: true,
+                        cwd: 'build',
+                        src: '*.html',
+                        dest: 'site'
+                    }
+                ]
+            }
+        },
+
+        /**
          * Copy resources to site directory
          */
         copy: {
             main: {
                 expand: true,
-                src: 'res/*',
+                src: ['res/*', 'font-awesome-4.0.3/**'],
                 dest: 'site'
             }
         },
@@ -107,9 +128,10 @@ module.exports = function (grunt) {
     grunt.loadNpmTasks('grunt-contrib-clean');
     grunt.loadNpmTasks('grunt-contrib-copy');
     grunt.loadNpmTasks('grunt-contrib-uglify');
+    grunt.loadNpmTasks('grunt-contrib-htmlmin');
     grunt.loadNpmTasks('grunt-prettify');
     grunt.loadNpmTasks('assemble');
 
     // Default task(s).
-    grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'copy', 'assemble', 'prettify']);
+    grunt.registerTask('default', ['clean', 'uglify', 'cssmin', 'copy', 'assemble', 'prettify', 'htmlmin']);
 }
