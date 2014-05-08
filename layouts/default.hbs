@@ -3,53 +3,52 @@
 <head>
     <META http-equiv="Content-Type" content="text/html; charset=UTF-8">
     <title>New Life Christian Fellowship</title>
-    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0" />
+    <meta name="viewport" content="initial-scale = 1.0,maximum-scale = 1.0"/>
 
     <META name="keywords" content="">
     <META name="description" content="">
     <META name="abstract" content="">
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/bootstrap.min.css" media="screen">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="font-awesome-4.0.3/css/font-awesome.min.css">
 </head>
 <body>
+
+<header>
+    {{md './src/pages/navigation.md'}}
+</header>
+
 <div id="main">
-    <div class="wrap">
-        <div id="header">
-            {{md './src/pages/navigation.md'}}
-            <div class="line"></div>
-        </div>
-        <div class="container">
-            {{> body }}
-        </div>
+    <div class="container">
+        {{> body }}
     </div>
     <hr>
     <footer>
         <div class="container">
             <div class="center">
                 <div class="row">
-                    <div class="span4 offset1">
+                    <div class="col-md-4 col-md-offset-1">
                         <address class="text-center">
-                            <span class="spacer"><i class="fa fa-location-arrow fa-fw"></i>22360 Redwood Road Castro Valley, CA 94546</span>
+                            <span class="spacer"><i class="fa fa-map-marker fa-fw"></i>22360 Redwood Road Castro Valley, CA 94546</span>
                         </address>
                     </div>
-                    <div class="span3">
+                    <div class="col-md-3">
                         <address class="text-center">
                             <span class="spacer nowrap"><i class="fa fa-phone fa-fw"></i>(510) 582-2261</span>
                         </address>
                     </div>
-                    <div class="span3">
+                    <div class="col-md-3">
                         <address class="text-center">
                             <span class="spacer"><i class="fa fa-envelope fa-fw"></i><a
                                     href="mailto:admin@newlifebayarea.org">admin@newlifebayarea.org</a></span>
                         </address>
                     </div>
                     <!--<div class="span1 text-center">-->
-                            <!--<span class="nowrap">-->
-                                <!--<i class="fa fa-twitter fa-fw"></i>-->
-                                <!--<i class="fa fa-google-plus fa-fw"></i>-->
-                                <!--<i class="fa fa-facebook fa-fw"></i>-->
-                            <!--</span>-->
+                    <!--<span class="nowrap">-->
+                    <!--<i class="fa fa-twitter fa-fw"></i>-->
+                    <!--<i class="fa fa-google-plus fa-fw"></i>-->
+                    <!--<i class="fa fa-facebook fa-fw"></i>-->
+                    <!--</span>-->
                     <!--</div>-->
                 </div>
             </div>

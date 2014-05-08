@@ -45,8 +45,9 @@ div#header {
     margin: 0px 25px 0px 25px;
 }
 
-h2 {
+.subtitle {
     color: #98abce;
+    font-size: 1.875em;
 }
 
 .italic {
