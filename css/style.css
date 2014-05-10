@@ -1,10 +1,6 @@
-#logo img {
-    height: 40px;
-    width: auto;
-}
-
-a#logo {
-    padding: 0px 10px 0px 10px;
+.logo {
+    height: 50px;
+    vertical-align: middle;
 }
 
 .floatright {

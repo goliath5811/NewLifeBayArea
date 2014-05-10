@@ -9,8 +9,8 @@
             </button>
 
             <!-- Be sure to leave the brand out there if you want it shown -->
-            <a id="logo" class="navbar-brand" href="#">
-                <img src="res/logo.png">
+            <a {{#is filename "index.html"}}href="#"{{else}}href="index.html"{{/is}}>
+                <img class="logo" src="res/logo.png">
             </a>
         </div>
         <div class="navbar-collapse collapse">
